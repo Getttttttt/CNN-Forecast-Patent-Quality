@@ -1,0 +1,17 @@
+Data数据说明，networkForecast.txt是预测集，每个专利未来5年的被引变化，networkRecord.txt是训练集，现有的数据。
+数据是一系列的专利数据，每个专利在每一年为一个数据单位，即如果专利x在2017年发布，则专利x在2017年的状态是一行数据，在2018年的状态是一行数据……一直到2023年的状态。
+id	专利的id，但是并不是唯一标识符，唯一标识符应该是id+current_year状态年份
+content1-content24	是专利的摘要内容提取出来的结果，专利主题向量，内容性指标，不随年份变化（1-24是成分数据）
+publication_year	是专利发布年份，不随年份变化
+current_year	当前状态年份，不随年份变化
+inventor_number		发明者数量，不随年份变化
+classfication_nums	属于多少个类别，不随年份变化
+active_area_number、non_active_area_number	活跃地区数量和非活跃地区数量，不随年份变化
+pantent_catation_nums	专利引用的专利数量，不随年份变化
+current_cited_by	预测指标——专利的质量，随年份变化
+current_similar_by	相似的专利数量，随年份变化
+current_application_event	专利申请事件数量，随年份变化
+current_application_claiming_priority	专利声明的优先权专利数量，随年份变化
+current_legal_event	专利的法律事件数量
+current_priority_application	专利的优先权专利数量，随年份变化
+current_application	专利的应用数量，随年份变化
